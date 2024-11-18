@@ -37,7 +37,7 @@ public class VFX_Firework_TrailFirework : VFXBase_Firework
         _visualEffect.SetVector3("OriginalWorldPos", data.originalWorldPos);
         _visualEffect.SetVector3("WorldDirection", data.worldDirection);
         transform.position = data.originalWorldPos;
-        rb.velocity = data.worldDirection * 20;
+        rb.linearVelocity = data.worldDirection * 20;
         timer = 0;
     }
 

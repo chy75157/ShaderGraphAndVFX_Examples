@@ -38,7 +38,7 @@ public class VFX_Firework_LaunchTrail : VFXBase_Firework
     public override void StartVFX()
     {
         base.StartVFX();
-        rb.velocity = Vector3.up * UnityEngine.Random.Range(MinSpeedFactor, MaxSpeedFactor);
+        rb.linearVelocity = Vector3.up * UnityEngine.Random.Range(MinSpeedFactor, MaxSpeedFactor);
     }
 
     public override void EndVFX()
